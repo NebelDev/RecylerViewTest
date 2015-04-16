@@ -20,10 +20,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.mSite.setText(mDataSet[0]);
+        holder.position = position;
     }
 
     @Override
     public int getItemCount() {
-        return mDataSet.length;
+        return 10;
     }
 }
