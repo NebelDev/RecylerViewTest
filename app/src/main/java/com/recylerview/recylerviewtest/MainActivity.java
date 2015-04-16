@@ -16,9 +16,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         RecyclerView rec = ( RecyclerView) findViewById(R.id.view);
         rec.setHasFixedSize(true);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         rec.setLayoutManager(layoutManager);
-
+        rec.setAdapter(new RecyclerAdapter());
     }
 
     @Override
